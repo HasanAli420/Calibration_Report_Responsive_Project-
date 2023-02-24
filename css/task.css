@@ -1,0 +1,101 @@
+.main-layout .task{
+    padding-right: 5%;
+    padding-left: 21rem;
+    padding-top: 30px;
+    background: rgba(0, 0, 0, 0.13);
+    height: 100vh;
+}
+
+.main-layout .task .task-table{
+    display: flex;
+}
+
+.main-layout .task .task-table .table{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.main-layout .task .task-table .title h2{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.main-layout .task .task-table .title a{
+    margin-left: auto;
+}
+
+.main-layout .task .task-table .adds{
+    margin: 27px 0;
+}
+
+.main-layout .task .task-table .adds .name,
+.main-layout .task .task-table .adds .address{
+    margin-bottom: 10px;
+}
+
+.main-layout .task .task-table .adds .first-span{
+    color: 
+    #ABB6E1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-layout .task .task-table .adds .last-span{
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.main-layout .task .task-table .main-table h2{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.main-layout .task .task-table .main-table .content-box{
+    width: 100%;
+    max-height: 350px;
+    margin-top: 30px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.main-layout .task .task-table .main-table .content-box table{
+    min-width: 1236px;
+    overflow-x: auto;
+}
+
+.main-layout .task .task-table .main-table .content-box table thead{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+}
+
+.main-layout .task .task-table .main-table .content-box th{
+    color: var(--th-color);
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    text-align: left;
+    border-bottom: 1px solid #F1F1F1;
+    text-transform: capitalize;
+}
+
+
+.main-layout .task .task-table .main-table .content-box td{
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 0;
+    text-align: left;
+    border-bottom: 1px solid #F1F1F1;
+}

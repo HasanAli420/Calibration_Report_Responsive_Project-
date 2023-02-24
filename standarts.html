@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>calibration report tool</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- layout -->
+    <div class="main-layout">
+
+        <!-- sidebar -->
+        <aside id="side" class="sidebar">
+            <!-- close button -->
+            <div id="close" class="close">
+                X
+            </div>
+            <!-- close button end -->
+
+            <!-- side logo -->
+            <div class="side-logo">
+                <figure>
+                    <img src="./media/logo.jpg" alt="sideLogo">
+                </figure>
+                <p class="font-md">Mohibbullah</p>
+            </div>
+            <!-- side logo end -->
+            <div class="side-link">
+                <div class="links">
+                    <!-- single link -->
+                    <a href="./index.html">
+                        <span class="material-symbols-outlined">
+                            person_add
+                        </span>
+                        Customer
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./tabel.html">
+                        <span class="material-symbols-outlined">
+                            list_alt_add
+                        </span>
+                        Instruments
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./standarts.html">
+                        <span class="material-symbols-outlined">
+                            shopping_bag
+                        </span>
+                        Standards
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./invoices.html">
+                        <span class="material-symbols-outlined">
+                            monitor_heart
+                        </span>
+                        Invoices
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./setting.html">
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                        Setting
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./task.html">
+                        <span class="material-symbols-outlined">
+                            task
+                        </span>
+                        Tasks
+                    </a>
+                    <!-- single link end -->
+
+                    <a href="#" class="show">
+                        <span class="material-symbols-outlined icon-width">
+                            lock_open
+                        </span>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- sidebar end -->
+
+        <!-- navbar -->
+        <div class="navbar d-flex align-center justify-between">
+            <!-- side icon and logo -->
+            <div class="d-flex align-center gap-2 sideIcon">
+                <!-- bars icon -->
+                <div id="menu" class="bars">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+                <!-- bars icon end -->
+
+                <!-- logo -->
+                <div class="logo">
+                    <h2 class="gradien-color">Hello, ali</h2>
+                    <p class="text-sm">Cheers and happy activities</p>
+                    <span class="material-symbols-outlined">
+                        waving_hand
+                    </span>
+                </div>
+                <!-- logo end -->
+            </div>
+            <!-- side icon and logo end -->
+
+            <!-- nav items -->
+            <nav class="nav-link">
+                <a href="#" class="size">
+                    <span class="material-symbols-outlined icon-width">
+                        notifications
+                    </span>
+                    <span class="text-sm">Notification</span>
+                </a>
+                <a href="#" class="change">
+                    <span class="material-symbols-outlined icon-width">
+                        lock
+                    </span>
+                    <span class="text-sm">Change password</span>
+                </a>
+                <a href="#" class="change">
+                    <span class="material-symbols-outlined icon-width">
+                        lock_open
+                    </span>
+                    <span class="text-sm">Logout</span>
+                </a>
+            </nav>
+            <!-- nav items end -->
+        </div>
+        <!-- navbar end -->
+
+        <!-- main body -->
+        <div class="stand">
+            <div class="stand-top d-flex">
+                <!-- title -->
+                <div class="title">
+                    <h2>download certificates</h2>
+                </div>
+                <!-- title end -->
+
+                <!-- download button -->
+                <div class="download-btn">
+                    <!-- button -->
+                    <div class="d-flex gap-2 align-center flex-wrap">
+                        <!-- single button -->
+                        <a href="#" class="print d-flex gap-1 align-center">
+                            <span class="material-symbols-outlined">
+                                print
+                            </span>
+                            Print
+                        </a>
+                        <!-- single button end -->
+                        <!-- single button -->
+                        <a href="#" class="download d-flex gap-1 align-center">
+                            <span class="material-symbols-outlined">
+                                download_for_offline
+                            </span>
+                            Download
+                        </a>
+                        <!-- single button end -->
+                        <!-- single button -->
+                        <a href="#" class="email d-flex gap-1 align-center">
+                            <span class="material-symbols-outlined">
+                                drafts
+                            </span>
+                            Email
+                        </a>
+                        <!-- single button end -->
+                    </div>
+                    <!-- button end -->
+                </div>
+                <!-- download button end -->
+            </div>
+            <div class="stand-body">
+                <!-- standards form -->
+                <div class="stand-form">
+                    <!-- form -->
+                    <form action="#">
+                        <!-- search -->
+                        <div class="search">
+                            <input type="text" name="search" id="" placeholder="Customer name">
+
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                            
+                        </div>
+                        <!-- search end -->
+                        <!-- from -->
+                        <div class="date">
+                            <div class=" d-flex gap-2 flex-wrap">
+                                <div class="box">
+                                    <input type="date" name="from" id="">
+                                </div>
+                                <div class="box">
+                                    <input type="date" name="to" id="">
+                                </div>
+                                <div class="btn">
+                                    <button type="button">Show reports</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- from end -->
+                        <p class="selet">Select all/none</p>
+
+                        <!-- table -->
+                        <div class="stand-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>name</th>
+                                        <th>make</th>
+                                        <th>model no</th>
+                                        <th>Sr no</th>
+                                        <th>Series</th>
+                                        <th>certificate no</th>
+                                        <th>Callibration
+                                            certificate</th>
+                                        <th>Cest certificate no</th>
+                                        <th>Test certificate</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arif islam</td>
+                                        <td>Arif islam</td>
+                                        <td>hiearif@gmail.com</td>
+                                        <td>47</td>
+                                        <td>$459.90</td>
+                                        <td>70</td>
+                                        <td>90</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="edit-delete">
+                                            <!-- edit button -->
+                                            <a href="#" class="edit-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                                    </svg> 
+                                                </span>
+                                            </a>
+                                            <!-- edit button end -->
+    
+                                            <!-- delete button -->
+                                            <a href="#" class="delete-btn">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <!-- delete button end -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table end -->
+                    </form>
+                    <!-- form end -->
+                </div>
+                <!-- standards form end -->
+            </div>
+        </div>
+        <!-- main body end -->
+    </div>
+    <!-- layout end -->
+
+    <script src="./app.js"></script>
+</body>
+</html>

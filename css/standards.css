@@ -1,0 +1,148 @@
+.stand{
+    padding-right: 5%;
+    padding-left: 21rem;
+    margin-top: 30px;
+}
+
+.stand .stand-top .title h2{
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.stand .stand-top .download-btn{
+    margin-left: auto;
+}
+
+.stand .stand-top .download-btn .print{
+    background:#2685DD;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 5px;
+}
+
+.stand .stand-top .download-btn .download{
+    background:#7B29E4;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 5px;
+}
+
+.stand .stand-top .download-btn .email{
+    background:#EE9328;
+    padding: 8px 18px;
+    color: white;
+    border-radius: 5px;
+}
+
+.stand .stand-body{
+    background: #fff;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.stand .stand-body .stand-form form .search{
+    position: relative;
+    width: 40%;
+}
+
+.stand .stand-body .stand-form form .search span{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #1C2B4C;
+}
+
+.stand .stand-body .stand-form form .search input{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.stand .stand-body .stand-form form .date{
+    margin-top: 20px;
+}
+
+.stand .stand-body .stand-form form .date .box{
+    width: 200px;
+}
+
+.stand .stand-body .stand-form form .date input{
+    border: 1px solid #E4E7F2;
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.stand .stand-body .stand-form form .date button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    background: #2685DD;
+    color: white;
+}
+
+.stand .stand-body .stand-form form .selet{
+    margin: 10px 0;
+    color: #2685DD;
+}
+
+.stand .stand-body .stand-form form .stand-table{
+    width: 100%;
+    max-height: 350px;
+    margin-top: 30px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.stand .stand-body .stand-form form .stand-table table{
+    min-width: 1236px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.stand .stand-body .stand-form form .stand-table table thead{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+}
+
+.stand .stand-body .stand-form form .stand-table table th{
+    color: var(--th-color);
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    text-align: left;
+    border-bottom: 1px solid #F1F1F1;
+    text-transform: capitalize;
+}
+
+.stand .stand-body .stand-form form .stand-table table td{
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 0;
+    text-align: left;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.stand .stand-body .stand-form form .stand-table table tbody .edit-delete .edit-btn{
+    color: var(--link-color);
+    width: 15px;
+    display: inline-block;
+}
+
+.stand .stand-body .stand-form form .stand-table table tbody .edit-delete .delete-btn{
+    color:#FFB26B;
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+}

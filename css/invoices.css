@@ -1,0 +1,55 @@
+.main-layout .invoices{
+    padding-right: 5%;
+    padding-left: 21rem;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.13);
+    height: 100vh;
+}
+
+.main-layout .invoices .invoice-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-layout .invoices .invoice-form form{
+    padding: 35px;
+    width: 450px;
+    background: white;
+    border-radius: 15px;
+}
+
+.main-layout .invoices .invoice-form form .form-title h2{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main-layout .invoices .invoice-form form .form-title a{
+    margin-left: auto;
+}
+
+.main-layout .invoices .invoice-form form .input-box{
+    margin-top: 30px;
+}
+
+.main-layout .invoices .invoice-form form .input-box input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E4E7F2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.main-layout .invoices .invoice-form form .sub-btn button{
+    width: 100%;
+    background:#3A83F4;
+    padding: 10px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 8px;
+    cursor: pointer;
+}

@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800&display=swap');
+
+
+@import url(./common.css);
+@import url(./variables.css);
+@import url(./standards.css);
+@import url(./invoices.css);
+@import url(./setting.css);
+@import url(./task.css);
+
+
+
+
+/* layout styling **************** */
+
+.main-layout{
+    min-height: 100vh;
+    background-color: #f9fafe;
+}
+
+.main-layout .navbar{
+    padding: 20px 5%;
+    padding-left: 21rem;
+}
+
+.main-layout .navbar .bars{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.main-layout .navbar .bars span{
+    font-size: 35px;
+}
+
+.main-layout .navbar .logo {
+    position: relative;
+    display: block;
+}
+
+.main-layout .navbar .logo h2{
+    font-size: 2.81rem;
+    font-weight: 500;
+}
+
+.main-layout .navbar .logo p{
+    color: var(--gray-100);
+    font-weight: 400;
+}
+
+.main-layout .navbar .logo span{
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    color: #EDA600;
+    width: 28.8px;
+}
+
+.main-layout .nav-link span{
+    vertical-align: middle;
+    color: var(--gray-200);
+    font-family: 400;
+}
+
+.main-layout .nav-link a{
+    margin-right: 20px;
+}
+
+
+
+
+/* sidebar ******************* */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18rem;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    transition: all .3s linear;
+}
+
+.sidebar .close{
+    position: absolute;
+    top: 17px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    background-color: #08f452;
+    border-radius: 100%;
+    color: #8b52ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar .side-logo{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sidebar .side-logo p{
+    color: var(--primary);
+    margin: 10px 0;
+}
+
+.sidebar .side-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.sidebar .side-link .links a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    color:#ABB6E1;
+    transition: all .4s;
+    padding: 15px 0;
+    padding-left: 44px;
+    
+}
+
+.sidebar .side-link .links a:hover{
+    color: var(--primary);
+    border-left: 5px solid blue;
+    background-color: #f3f4f6;
+    transition: all .3s;
+}
+
+.sidebar .side-link .links .show{
+    display: none;
+}
+
+/* sidebar end ******************* */
+
+
+/* main-layout ********************************************/
+/* main-layout Customer start *********/
+
+.main-layout .customer{
+    padding-right: 5%;
+    padding-left: 21rem;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.main-layout .customer .pending-title{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 38px;
+}
+
+
+.main-layout .customer .pending{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(18.56rem, 1fr)); */
+    /* grid-template-rows: repeat(4, 15.37rem); */
+}
+
+
+.main-layout .customer .pending .card{
+    background: #fff;
+    height: 15.37rem;
+    padding: 20px 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-layout .customer .pending .card .pending-value{
+    width: 102px;
+    height: 102px;
+    font-size: 40px;
+    background: linear-gradient(190deg, #d91caa, #fbfbfa);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-layout .customer .pending .card .pending-value span{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-layout .customer .pending .card img{
+    width: 125px;
+    padding: 35px 15px;
+}
+
+.main-layout .customer .pending .card p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+/* tasklist style ******* */
+
+.main-layout .customer .tasklist{
+    margin-top: 60px;
+}
+
+.main-layout .customer .tasklist .task-title{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 38px;
+}
+
+.main-layout .customer .card-box{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.main-layout .customer .card-box .card{
+    height: 15.37rem;
+    background: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-layout .customer .tasklist .card-box .card p{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.main-layout .customer .tasklist .card-box .card span{
+    color: #FFB26B;
+    font-size: 25px;
+}
+
+/* tasklist style end ***** */
+
+
+/* main-layout Customer end **********/
+
+
+/* main-layout Instruments start **********/
+
+.instruments{
+    padding-right: 5%;
+    padding-left: 21rem;
+    margin-top: 30px;
+}
+
+.instruments .instruments-body{
+    background: #fff;
+    width: 100%;
+    height: 690px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.instruments .search-area .search{
+    width: 40%;
+}
+
+.instruments .search-area .search input{
+    border: 1px solid#E4E7F2;
+    padding: 12px 12px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.instruments .search-area .search input::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    color:#ABB6E1;
+    text-transform: capitalize;
+}
+
+.instruments .search-area .add-btn{
+    margin-left: auto;
+}
+
+.instruments .search-area .add-btn a{
+    background:#3A83F4;
+    display: block;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.instruments .standards{
+    margin-top: 35px;
+}
+
+.instruments .standards .stan-title h2{
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+}
+
+.instruments .standards .stan-table{
+    margin-top: 30px;
+    max-height: 450px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.instruments .standards .table{
+    min-width: 1236px;
+}
+
+.instruments .standards .table thead{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+}
+
+.instruments .standards .table thead th{
+    color: var(--th-color);
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    text-align: left;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.instruments .standards .table tbody td{
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 0;
+    text-align: left;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.instruments .standards .table tbody .edit-delete .edit-btn{
+    color: var(--link-color);
+    width: 15px;
+    display: inline-block;
+}
+
+.instruments .standards .table tbody .edit-delete .delete-btn{
+    color:#FFB26B;
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+}
+/* main-layout Instruments end **********/
+
+
+/* main-layout ********************************************/
+
+
+/* responsive **********************/
+
+@media (max-width: 1550px){
+    .main-layout .customer .pending{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1280px){
+    .main-layout .customer .pending{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .main-layout .customer .card-box{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px){
+    #side{
+        left: -18rem;
+    }
+
+    #side.active{
+        left: 0;
+    }
+
+    .main-layout .navbar{
+        padding: 8px 5%;
+    }
+
+    .main-layout .instruments{
+        padding: 0 5%;
+    }
+
+    .main-layout .stand{
+        padding: 0 5%;
+    }
+
+    .main-layout .invoices{
+        padding: 0 5% !important;
+    }
+
+    .main-layout .setting{
+        padding: 0 5% !important;
+    }
+
+    .main-layout .task{
+        padding: 0 5% !important;
+    }
+
+    .main-layout .navbar .bars{
+        display: block;
+    }
+
+    .sidebar .close{
+        display: flex;
+    }
+
+    /* .main-layout .navbar .logo {
+        display: none;
+    } */
+
+    .main-layout .navbar .logo span{
+        top: 8px;
+        right: -10px;
+    }
+
+    .main-layout .navbar .logo h2{
+        font-size: 2rem;
+    }
+
+    .main-layout .customer{
+        padding: 5%;
+    }
+
+    .main-layout .nav-link .change{
+        display: none;
+    }
+
+    .sidebar .side-link .links .show{
+        display: flex;
+    }
+
+    .main-layout .customer .pending{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .main-layout .customer .card-box{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px){
+    .main-layout .customer .pending{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px){
+    .main-layout .customer .pending{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .main-layout .customer .card-box{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
+}
+
+@media (max-width: 385px){
+    .main-layout .navbar .bars span {
+        font-size: 30px;
+    }
+
+    .main-layout .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .main-layout .navbar .logo p {
+        font-size: 12px;
+    }
+
+    .main-layout .navbar .sideIcon{
+        gap: 10px;
+    }
+
+    .main-layout .navbar .logo span {
+        top: 5px;
+        right: 8px;
+        font-size: 20px;
+    }
+
+    .main-layout .nav-link .size{
+        font-size: 14px;
+    }
+
+    .main-layout .customer .tasklist .task-title{
+        font-size: 20px;
+    }
+
+    .main-layout .customer .pending-title{
+        font-size: 20px;
+    }
+
+    .main-layout .customer .tasklist .card-box .card p{
+        font-size: 16px;
+    }
+
+    .main-layout .customer .pending .card p{
+        font-size: 16px;
+    }
+
+    .instruments .search-area .search {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .instruments .search-area .add-btn a{
+        display: inline-block;
+    }
+
+    .instruments .search-area{
+        display: block;
+    }
+
+    .stand .stand-top{
+        display: block;
+    }
+
+    .stand .stand-top .title h2 {
+        font-size: 25px;
+    }
+
+    .stand .stand-top .download-btn {
+        margin-top: 20px;
+    }
+
+    .stand .stand-body .stand-form form .search {
+        width: 100%;
+    }
+
+    .stand .stand-body .stand-form form .date input{
+        margin-bottom: 15px;
+    }
+
+    .main-layout .setting .setting-form form .input-box{
+        display: block;
+    }
+
+    .main-layout .setting .setting-form form .input-box .input{
+        margin-bottom: 15px;
+    }
+
+    .main-layout .setting .setting-form form .details .items{
+        display: block;
+    }
+
+    .main-layout .setting .setting-form form .details .items select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .main-layout .setting .setting-form form .message{
+        display: block;
+    }
+
+    .main-layout .setting .setting-form form .message .sms, .main-layout .setting .setting-form form .message .boxs {
+        margin-bottom: 15px;
+    }
+
+    .main-layout .task .task-table .adds {
+        display: block;
+    }
+
+    .main-layout .task .task-table .adds .adds-dets{
+        margin-bottom: 23px;
+    }
+}
+
+/* responsive *******************/
+
+

@@ -1,0 +1,167 @@
+.main-layout .setting{
+    padding-right: 5%;
+    padding-left: 21rem;
+    padding-top: 30px;
+    background: rgba(0, 0, 0, 0.13);
+}
+
+.main-layout .setting .setting-form{
+    display: flex;
+}
+
+.main-layout .setting .setting-form form{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 970px;
+    margin: auto;
+}
+
+.main-layout .setting .setting-form form .form-title h2{
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main-layout .setting .setting-form form .form-title a{
+    margin-left: auto;
+}
+
+.main-layout .setting .setting-form form .input-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.main-layout .setting .setting-form form .input-box .input{
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .input-box .input input{
+    width: 100%;
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    border-radius: 6px;
+    color: var(--primary);
+}
+
+.main-layout .setting .setting-form form .input-box .input select{
+    width: 100%;
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    color: var(--primary);
+}
+
+.main-layout .setting .setting-form form .details h2{
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-layout .setting .setting-form form .details .items select{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    color: var(--primary);
+    width: 30%;
+}
+
+.main-layout .setting .setting-form form .message{
+    margin: 27px 0;
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .message .sms,
+.main-layout .setting .setting-form form .message .boxs{
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .message .sms textarea{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    height: 135px;
+    color: var(--primary);
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .message .boxs input{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    border-radius: 6px;
+    color: var(--primary);
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .message .boxs select{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    color: var(--primary);
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .acy-res .area{
+    width: 30%;
+}
+
+.main-layout .setting .setting-form form .acy-res .area label{
+    display: block;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main-layout .setting .setting-form form .acy-res .area input{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    color: var(--primary);
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .reading h2{
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.main-layout .setting .setting-form form .reading .box-container .content label{
+    display: block;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .reading .box-container .content input{
+    border: 1px solid #E4E7F2;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+    color: var(--primary);
+    width: 100%;
+}
+
+.main-layout .setting .setting-form form .sub-btn{
+    margin-top: 30px;
+}
+
+.main-layout .setting .setting-form form .sub-btn button{
+    width: 40%;
+    background: 
+    #3A83F4;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+}

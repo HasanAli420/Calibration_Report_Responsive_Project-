@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>calibration report tool</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- layout -->
+    <div class="main-layout">
+
+        <!-- sidebar -->
+        <aside id="side" class="sidebar">
+            <!-- close button -->
+            <div id="close" class="close">
+                X
+            </div>
+            <!-- close button end -->
+
+            <!-- side logo -->
+            <div class="side-logo">
+                <figure>
+                    <img src="./media/logo.jpg" alt="sideLogo">
+                </figure>
+                <p class="font-md">Mohibbullah</p>
+            </div>
+            <!-- side logo end -->
+            <div class="side-link">
+                <div class="links">
+                    <!-- single link -->
+                    <a href="./index.html">
+                        <span class="material-symbols-outlined">
+                            person_add
+                        </span>
+                        Customer
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./tabel.html">
+                        <span class="material-symbols-outlined">
+                            list_alt_add
+                        </span>
+                        Instruments
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./standarts.html">
+                        <span class="material-symbols-outlined">
+                            shopping_bag
+                        </span>
+                        Standards
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./invoices.html">
+                        <span class="material-symbols-outlined">
+                            monitor_heart
+                        </span>
+                        Invoices
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./setting.html">
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                        Setting
+                    </a>
+                    <!-- single link end -->
+                    <!-- single link -->
+                    <a href="./task.html">
+                        <span class="material-symbols-outlined">
+                            task
+                        </span>
+                        Tasks
+                    </a>
+                    <!-- single link end -->
+
+                    <a href="#" class="show">
+                        <span class="material-symbols-outlined icon-width">
+                            lock_open
+                        </span>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- sidebar end -->
+
+        <!-- navbar -->
+        <div class="navbar d-flex align-center justify-between">
+            <!-- side icon and logo -->
+            <div class="d-flex align-center gap-2 sideIcon">
+                <!-- bars icon -->
+                <div id="menu" class="bars">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+                <!-- bars icon end -->
+
+                <!-- logo -->
+                <div class="logo">
+                    <h2 class="gradien-color">Hello, ali</h2>
+                    <p class="text-sm">Cheers and happy activities</p>
+                    <span class="material-symbols-outlined">
+                        waving_hand
+                    </span>
+                </div>
+                <!-- logo end -->
+            </div>
+            <!-- side icon and logo end -->
+
+            <!-- nav items -->
+            <nav class="nav-link">
+                <a href="#" class="size">
+                    <span class="material-symbols-outlined icon-width">
+                        notifications
+                    </span>
+                    <span class="text-sm">Notification</span>
+                </a>
+                <a href="#" class="change">
+                    <span class="material-symbols-outlined icon-width">
+                        lock
+                    </span>
+                    <span class="text-sm">Change password</span>
+                </a>
+                <a href="#" class="change">
+                    <span class="material-symbols-outlined icon-width">
+                        lock_open
+                    </span>
+                    <span class="text-sm">Logout</span>
+                </a>
+            </nav>
+            <!-- nav items end -->
+        </div>
+        <!-- navbar end -->
+
+        <!-- main body -->
+        <div class="invoices">
+            <div class="invoice-form">
+                <!-- form -->
+                <form action="#">
+                    <!-- title -->
+                    <div class="form-title d-flex align-center">
+                        <h2>Add Standards</h2>
+                        <a href="#">X</a>
+                    </div>
+                    <!-- title end -->
+                    <!-- input box -->
+                    <div class="input-box">
+                        <input type="text" name="" id="" placeholder="Instrument name">
+
+                        <input type="date" name="" id="" placeholder="">
+                        <input type="date" name="" id="" placeholder="">
+
+                        <input type="text" name="" id="" placeholder="instrument id">
+
+                        <input type="text" name="" id="" placeholder="certificate number">
+                    </div>
+                    <!-- input box end -->
+
+                    <!-- button -->
+                    <div class="sub-btn">
+                        <button type="submit">Save</button>
+                    </div>
+                    <!-- button end -->
+                </form>
+                <!-- form end -->
+            </div>
+        </div>
+        <!-- main body end -->
+    </div>
+    <!-- layout end -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
